@@ -3,7 +3,7 @@ import { Button,NavDropdown, Navbar, Nav, Form, FormControl } from 'react-bootst
 
 export default function footer() {
     return (
-        <Navbar fixed ="bottom" collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar className="mt-5" fixed ="bottom" collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Navbar.Brand>@ 2020 Copyright: Henry Parrish </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">

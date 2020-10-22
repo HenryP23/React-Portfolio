@@ -1,45 +1,54 @@
 import React from 'react'
-import {Row, Col, Image, Button, Card, CardGroup, Container } from 'react-bootstrap';
+import {Row, Col, Image, Button, Card, CardGroup, Container, Dropdown } from 'react-bootstrap';
 import '../App.css';
 import profilePic from '../images/0.jpg';
 export default function home() {
     return (
-
-        <CardGroup>
+        <>
+        <CardGroup className = "mb-5">
             <Card className="homeCard">
                 <Container >
-                    <Card bg="light" text="light" border="dark" className="text-center mt-5 ml-5 mr-5" >
-
+                    <Card bg="light" text="light" border="dark" className="text-center mt-5 ml-5 mr-5" id="about">
                         <Card.Body className="color">
                             <Image src={profilePic} roundedCircle />
                             <Card.Title className="mt-2">About Me</Card.Title>
                             <Card.Text>
                                 My name is Henry Parrish. I am a graduate of columbia state community college, with an assosiate degree in computer science. I have also love programming ever since I high, where I was able to take 2 years of it. In my spare time I like to develop game on unity. I also enjoy bouldering because it challenges me and allows me to use problem solving skills when I am not programming.<br />
                                 <br />
-                                <Row className="rowMargin">
+                                <Row className="rowMargin"> 
                                     <Col>
-                                        <ul className="text-left">
-                                            <p>Skills</p>
-                                            <li>Javascript</li>
-                                            <li>Jquery</li>
-                                            <li>Handlebars</li>
-                                            <li>React</li>
-                                        </ul>
+                                    <Dropdown  drop="right" className="expandM">
+                                        <Dropdown.Toggle style={{ width: '7rem' }} variant="info">Skills</Dropdown.Toggle>
+                                        <Dropdown.Menu >
+                                            <Dropdown.Item>◾ Javascript</Dropdown.Item>
+                                            <Dropdown.Divider />
+                                            <Dropdown.Item>◾ Jquery</Dropdown.Item>
+                                            <Dropdown.Divider />
+                                            <Dropdown.Item>◾ Handlebars</Dropdown.Item>
+                                            <Dropdown.Divider />
+                                            <Dropdown.Item>◾ React</Dropdown.Item>
+                                        </Dropdown.Menu>
+                                        </Dropdown>
+                                    </Col> 
+                                    <Col>
+                                    <Dropdown drop="right" className="expandM">
+                                        <Dropdown.Toggle style={{ width: '7rem' }} variant="info">Education</Dropdown.Toggle>
+                                        <Dropdown.Menu>
+                                            <Dropdown.Item>◾ Columbia State <br /> Assosiates degree</Dropdown.Item>
+                                            <Dropdown.Divider />
+                                            <Dropdown.Item>◾ Vanderbilt Full-Stack <br /> Bootcamp Certificate</Dropdown.Item>
+                                        </Dropdown.Menu>
+                                        </Dropdown>
                                     </Col>
                                     <Col>
-                                        <ul className="text-left align-self-end">
-                                            <p>Education</p>
-                                            <li>Columbia State Assosiates degree</li>
-                                            <li>Vanderbilt Full-Stack Bootcamp</li>
-                                        </ul>
-                                    </Col>
-                                    <Col>
-                                        <ul className="text-left align-self-end">
-                                            <p>Hobbies</p>
-                                            <li>Game Development</li>
-                                            <li>Climbing</li>
-                                            
-                                        </ul>
+                                    <Dropdown drop="right" className="expandM">
+                                        <Dropdown.Toggle style={{ width: '7rem' }} variant="info">Hobbies</Dropdown.Toggle>
+                                        <Dropdown.Menu>
+                                            <Dropdown.Item>◾ Game Development</Dropdown.Item>
+                                            <Dropdown.Divider />
+                                            <Dropdown.Item>◾ Climbing</Dropdown.Item>
+                                        </Dropdown.Menu>
+                                        </Dropdown>
                                     </Col>
                                     
                                 </Row>
@@ -56,5 +65,6 @@ export default function home() {
             </Card>
         </CardGroup>
 
+        </>
     )
 }

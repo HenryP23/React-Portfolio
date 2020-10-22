@@ -8,12 +8,13 @@ import workDay from '../images/WorkDayImg.png';
 import p1Img from '../images/Time-Well-Wasted.gif';
 import '../App.css';
 
+
 export default function portfolio() {
     return (
         <>
             <Container>
                 <CardGroup>
-                    <Card bg="dark" text="light" border="dark" className="text-center mt-5 border" style={{ width: '20rem' }}>
+                    <Card id="port" bg="dark" text="light" border="dark" className="text-center mt-5 border" style={{ width: '20rem' }}>
                         <Card.Body>
                             <Card.Title><h1>Project Collection</h1></Card.Title>
                             <Card.Text>
@@ -26,7 +27,7 @@ export default function portfolio() {
             <Container>
                 <CardGroup>
 
-                    <Card bg="dark" text="light" border="dark" className="text-center mt-5 border mr-5" style={{ width: '20rem' }}>
+                    <Card id="port" bg="dark" text="light" border="dark" className="text-center mt-5 border mr-5" style={{ width: '20rem' }}>
                         <Card.Img variant="top" src={p2Img} height="350"/>
                         <Card.Body>
                             <Card.Title>Question Forum</Card.Title>
@@ -37,7 +38,7 @@ export default function portfolio() {
                         </Card.Body>
                     </Card>
             
-                    <Card bg="dark" text="light" border="dark" className="text-center mt-5" style={{ width: '20rem' }}>
+                    <Card id="port"  bg="dark" text="light" border="dark" className="text-center mt-5" style={{ width: '20rem' }}>
                         <Card.Img variant="top" src={p1Img} height="350" />
                         <Card.Body >
                             <Card.Title>Music and Movie Search</Card.Title>
@@ -56,7 +57,7 @@ export default function portfolio() {
             <Container>
                 <CardGroup>
 
-                    <Card bg="dark" text="light" border="dark" className="text-center mt-5 mr-5" style={{ width: '20rem' }}>
+                    <Card id="port" bg="dark" text="light" border="dark" className="text-center mt-5 mr-5" style={{ width: '20rem' }}>
                         <Card.Img variant="top" src={burger} height="350" />
                         <Card.Body>
                             <Card.Title>Burger Bucket List</Card.Title>
@@ -68,7 +69,7 @@ export default function portfolio() {
                         </Card.Body>
                     </Card>
 
-                    <Card bg="dark" text="light" border="dark" className="text-center mt-5 " style={{ width: '20rem' }}>
+                    <Card id="port" bg="dark" text="light" border="dark" className="text-center mt-5 " style={{ width: '20rem' }}>
                         <Card.Img variant="top" src={codeQuiz} height="350"/>
                         <Card.Body >
                             <Card.Title>Code Quiz</Card.Title>
@@ -85,7 +86,7 @@ export default function portfolio() {
             <Container>
                 <CardGroup>
 
-                    <Card bg="dark" text="light" border="dark" className="text-center mt-5 mr-5" style={{ width: '20rem' }}>
+                    <Card id="port" bg="dark" text="light" border="dark" className="text-center mt-5 mr-5" style={{ width: '20rem' }}>
                         <Card.Img variant="top" src={workDay} height="350" />
                         <Card.Body>
                             <Card.Title>Work Day Scheduler</Card.Title>
@@ -96,7 +97,7 @@ export default function portfolio() {
                         </Card.Body>
                     </Card>
 
-                    <Card bg="dark" text="light" border="dark" className="text-center mt-5" style={{ width: '20rem' }}>
+                    <Card id="port" bg="dark" text="light" border="dark" className="text-center mt-5" style={{ width: '20rem' }}>
                         <Card.Img variant="top" src={noteTaker} height="350"/>
                         <Card.Body >
                             <Card.Title>Note Taker</Card.Title>
@@ -109,10 +110,6 @@ export default function portfolio() {
                     </Card>
                 </CardGroup>
             </Container>
-            <br />
-            <br />
-            <br />
-            <br />
         </>
     )
 }

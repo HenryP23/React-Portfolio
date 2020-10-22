@@ -2,27 +2,45 @@
     margin-left: -2px;
     margin-right: -2px;
     height: 20rem;
-    background-color: #343A40 !important;
+    background-color: #17A2B8 !important;
 }
 
 .color{
-    background-color: #17A2B8 !important;
+    background-color: #343A40  !important;
 }
 .text-left{
     font-size: 22px;
 }
 .rowMargin{
-    margin-left: 2.5rem !important;
+    margin-left: 2rem ;
 }
 
+body {
+    margin-bottom: 38rem !important ;
+}
 
 @media only screen and (max-width: 600px) {
     .homeCard{
-        margin-left: -2rem;
-        margin-right: -2rem;
+        margin-left: -3rem;
+        margin-right: 0rem;
     }
     .mr-5{
         margin-right: 0px;
     }
+    .expandM{
+        margin-left: -2.7rem ;
+        margin-right: 9rem ;
+        margin-bottom: 2rem;
+    }
+    .text-center{
+        margin-left: 0.8rem;
+    }
+    #about{
+        margin-right: -0.01px !important;
+    }
+    #port{
+        margin-left: 2rem;
+    }
+
   }
 
